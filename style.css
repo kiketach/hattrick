@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #c2c1c1;
+    
+}
+
+/*=============HEADER===================== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav > ul > li > a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding-left: 16px;
+}
+
+nav ul li ul a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #747171;
+}
+
+/* =============BANNER===================== */
+.banner {
+    background: url('./imgs/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+/* =============TITULO BAJO EL BANNER===================== */
+.header {
+    background-color: #c2c1c1   ;
+    text-align: center;
+    padding: 20px;
+}
+/* =============CARDS===================== */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+.product-card h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* =============BOTON DE WHATSAPP===================== */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-button img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

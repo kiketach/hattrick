@@ -72,7 +72,7 @@ nav li a:hover {
 
 /* =============BANNER===================== */
 .banner {
-    background: url('/Imgs/Banner.jpg') no-repeat center center;
+    background: url('Imgs/Banner.jpg') no-repeat center center;
     background-size: cover;
     height: 300px;
     color: white;

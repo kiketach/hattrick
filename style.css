@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-  }
-
 h1{
     font-family: "Caveat", cursive;
     font-size: 55px;
@@ -98,7 +94,7 @@ nav li a:hover {
     right: 0;
     bottom: 0;
     left: 0; /* Estos cuatro valores hacen que el pseudo-elemento cubra todo el banner */
-    background: rgba(0, 0, 0, 0.5); /* Añade una capa negra semitransparente sobre la imagen del banner */
+    background: rgba(0, 0, 0, 0.3); /* Añade una capa negra semitransparente sobre la imagen del banner */
     z-index: -1;
 }
 /* =============TITULO BAJO EL BANNER===================== */
@@ -112,18 +108,17 @@ nav li a:hover {
 /* =============PORTADA MODELO===================== */
 .modelo {
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
         url('Imgs/background-seccion.jpg') no-repeat center center fixed; 
+    background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 20px;
     text-align: center;
-    color: white;
+    color: rgb(243, 238, 238);
 }
-
-
 /* Estilos para el botón */
 .show-modelo {
     background-color: black;
@@ -185,24 +180,25 @@ nav li a:hover {
     flex-direction: column; 
     flex: 1 0 10%;
     margin: 1%; 
-    box-sizing: border-box
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.6); /*fondo blanco con transparencia */
 }
 
 /* Estilos para pantallas de hasta 600px de ancho */
 @media (max-width: 600px) {
     .modelo-card {
-        flex: 1 0 50%; /* Hace que cada tarjeta ocupe al menos el 50% del ancho del contenedor en pantallas pequeñas */
+        flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */
     }
 }
 
 .modelo-card p {
-    color: white;
+    color: rgb(10, 10, 10);
     font-size: 16px;
     margin-top: 0;
 }
 
 .modelo-card h2 {
-    color: white;
+    color: rgb(10, 10, 10);
     font-size: 24px;
     margin-bottom: 0;
 }
@@ -212,7 +208,7 @@ nav li a:hover {
 }
 
 .modelo-card img {
-    width: 50%; 
+    width: 100%; 
     height: auto; 
     object-fit: cover; 
     display: block;
@@ -235,7 +231,7 @@ nav li a:hover {
 }
 
 .modelo-card button:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     border: 1px solid black;
 }
@@ -268,4 +264,31 @@ nav li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* =============FOOTER===================== */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff; /* Cambia el color de los enlaces a blanco */
+    margin-right: 10px; /* Agrega un poco de espacio a la derecha de cada enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+footer i {
+    font-size: 1 em;
+    margin-right: 0 5px;
 }

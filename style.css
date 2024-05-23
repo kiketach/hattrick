@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
   }
 
+h1{
+    font-family: "Caveat", cursive;
+    font-size: 55px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -106,10 +111,18 @@ nav li a:hover {
 
 /* =============PORTADA MODELO===================== */
 .modelo {
-    background-color: #c2c1c1;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('Imgs/background-seccion.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 20px;
     text-align: center;
+    color: white;
 }
+
 
 /* Estilos para el botón */
 .show-modelo {
@@ -166,6 +179,7 @@ nav li a:hover {
     margin: 0 auto;
 }
 /* =============CARDS===================== */
+
 .modelo-card {
     display: flex;
     flex-direction: column; 
@@ -182,13 +196,13 @@ nav li a:hover {
 }
 
 .modelo-card p {
-    color: #666;
+    color: white;
     font-size: 16px;
     margin-top: 0;
 }
 
 .modelo-card h2 {
-    color: #333;
+    color: white;
     font-size: 24px;
     margin-bottom: 0;
 }

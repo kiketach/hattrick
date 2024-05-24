@@ -379,7 +379,7 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        left: 160px;     
+        left: 350px;     
     }
     .modelo-card {
         flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */

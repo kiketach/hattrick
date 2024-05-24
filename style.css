@@ -364,12 +364,22 @@ footer a {
     }
 
     .icon-container i {
-        font-size: 10px;
+        font-size: 8px;
         white-space: normal;
     }
 
     .logo {
         margin-bottom: 20px; /* Ajusta este valor a lo que necesites */
+    }
+
+    .whatsapp-button {
+        right: auto; /* Elimina la propiedad right */
+        left: 30px; /* Añade la propiedad left */
+    }
+
+    .whatsapp-button2 .tooltip {
+        right: auto; /* Elimina la propiedad right */
+        left: 120%; /* Añade la propiedad left */
     }
     
 }

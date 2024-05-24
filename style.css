@@ -131,7 +131,6 @@ nav li a:hover {
 
 .header i {
     font-size: 15px;
-    white-space: nowrap;
 }
 
 /* =============PORTADA MODELO===================== */
@@ -281,7 +280,7 @@ nav li a:hover {
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
-    right: 35px;
+    right: 15px;
     padding: 10px;
     border-radius: 50%;
     font-size: 24px;
@@ -309,7 +308,7 @@ nav li a:hover {
 }
 .whatsapp-button2 {
     position: fixed;
-    right: 40px;
+    right: 10px;
     bottom: 20px;
     z-index: 1000;
 }

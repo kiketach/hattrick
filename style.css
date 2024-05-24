@@ -371,19 +371,14 @@ footer a {
     .logo {
         margin-bottom: 20px; /* Ajusta este valor a lo que necesites */
     }
-
-    @media (max-width: 600px) {
-        .whatsapp-button {
-            right: auto; /* Elimina la propiedad right */
-            left: 10px; /* Ajusta la propiedad left */
-        }
     
-        .whatsapp-button2 .tooltip {
-            right: auto; /* Elimina la propiedad right */
-            left: 80%; /* Ajusta la propiedad left */
-        }
+    .whatsapp-button {
+        right: auto; /* Elimina la propiedad right */
+        left: 10px; /* Ajusta la propiedad left */
     }
-    
+
+    .whatsapp-button2 .tooltip {
+        right: 100%; /* Ajusta la propiedad right */
+        left: auto; /* Elimina la propiedad left */
+    }
 }
-
-

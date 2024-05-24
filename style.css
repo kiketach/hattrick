@@ -369,16 +369,16 @@ footer a {
     }
 
     .logo {
-        margin-bottom: 20px; /* Ajusta este valor a lo que necesites */
+        margin-bottom: 20px;
     }
-    
+
     .whatsapp-button {
-        right: auto; /* Elimina la propiedad right */
-        left: 10px; /* Ajusta la propiedad left */
+        right: 10px;     
     }
 
     .whatsapp-button2 .tooltip {
-        right: 100%; /* Ajusta la propiedad right */
-        left: auto; /* Elimina la propiedad left */
+        font-size: small;
+        right: 100%;
+        left: auto; 
     }
 }

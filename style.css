@@ -378,16 +378,8 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        right: 10px;     
+        right: 20px;     
     }
-
-    .whatsapp-button2 .tooltip {
-        font-size: 10px;
-        right: 100%;
-        left: auto;
-        top: 20px; 
-    }
-
     .modelo-card {
         flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */
     }

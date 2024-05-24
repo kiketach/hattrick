@@ -1,15 +1,16 @@
-h1{
-    font-family: "Caveat", cursive;
-    font-size: 55px;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: #c2c1c1;
-    
 }
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 55px;
+    white-space: nowrap; /*título siempre en una sola línea */
+}
+
 /*=============HEADER===================== */
 header {
     position: fixed;
@@ -117,7 +118,13 @@ nav li a:hover {
     background-size: cover;
     padding: 20px;
     text-align: center;
-    color: rgb(243, 238, 238);
+    color: rgb(5, 5, 5);
+    font-size: 27px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.modelo p{
+    font-size: 20px;
 }
 /* Estilos para el botón */
 .show-modelo {
@@ -132,6 +139,7 @@ nav li a:hover {
     transition: all 0.5s;
     cursor: pointer;
     border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .show-modelo:hover {
@@ -160,7 +168,7 @@ nav li a:hover {
 }
 
 .modelo img {
-    width: 50%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     max-height: 500px;
@@ -291,4 +299,19 @@ footer a {
 footer i {
     font-size: 1 em;
     margin-right: 0 5px;
+}
+
+
+/* Cuando la pantalla tiene 600px o menos de ancho */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+/* Cuando la pantalla tiene 400px o menos de ancho */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px; /* Reduce aún más el tamaño de la fuente */
+    }
 }

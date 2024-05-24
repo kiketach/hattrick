@@ -209,7 +209,7 @@ nav li a:hover {
 }
 
 .modelo img {
-    width: 80%;
+    width: 95%;
     height: auto;
     object-fit: cover;
     max-height: 500px;
@@ -378,7 +378,7 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        right: 40px;     
+        left: 40px;     
     }
     .modelo-card {
         flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */

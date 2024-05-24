@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background: #c2c1c1;
+    max-width: 100vw; /* Evita que el cuerpo se desborde */
+    box-sizing: border-box;
 }
 
 h1 {
@@ -379,7 +381,7 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        left: 350px;     
+        left: 250px;     
     }
     .modelo-card {
         flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */

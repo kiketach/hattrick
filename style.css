@@ -131,6 +131,7 @@ nav li a:hover {
 
 .header i {
     font-size: 15px;
+    word-wrap: break-word;
 }
 
 /* =============PORTADA MODELO===================== */
@@ -349,7 +350,12 @@ footer a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
-
+/* Cuando la pantalla tiene 400px o menos de ancho */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px; /* Reduce aún más el tamaño de la fuente */
+    }
+}
 
 /* Cuando la pantalla tiene 600px o menos de ancho */
 @media (max-width: 600px) {
@@ -358,7 +364,7 @@ footer a {
     }
 
     .header i {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .logo {
@@ -367,9 +373,4 @@ footer a {
     
 }
 
-/* Cuando la pantalla tiene 400px o menos de ancho */
-@media (max-width: 400px) {
-    h1 {
-        font-size: 30px; /* Reduce aún más el tamaño de la fuente */
-    }
-}
+

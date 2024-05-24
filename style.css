@@ -365,7 +365,7 @@ footer a {
 /* Cuando la pantalla tiene 600px o menos de ancho */
 @media (max-width: 600px) {
     h1 {
-        font-size: 40px; /* Reduce el tamaño de la fuente */
+        font-size: 30px;
     }
 
     .icon-container i {
@@ -379,7 +379,7 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        left: 80px;     
+        left: 160px;     
     }
     .modelo-card {
         flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */

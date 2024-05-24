@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imgs/Logo.png" type="image/x-icon">
     <title>Zapatillas Hat Trick</title>
 </head>
 <!----------- HEADER --------------->
@@ -40,15 +41,21 @@
 </header>
 <body>
     <div id="inicio" class="banner">
+        <img src="Imgs/Logo.png" alt="Logo" class="logo">
         <h1>¡Bienvenido a Hat Trick!</h1>
         <p>Encuentra las mejores zapatillas para futsal aquí.</p>
     </div>
     <div class="header">
-        <h1>Nuestros Productos</h1>
+            <div class="icon-container">
+            <i class="fas fa-truck"> Envio a Nivel Nacional </i>
+            <i class="fas fa-dollar-sign"> Pagas al recibir tu pedido </i>
+            <i class="fas fa-user"> Le ponemos tu nombre y numero de jugador </i>
+            <i class="fas fa-headset"> Atencion personalizada via whatsApp </i>
+        </div>
     </div>
        <!----------- PORTADA MODELO MASTER --------------->
     <section class="modelo" id="master">
-        <h2>Modelo MASTER</h2>
+        <h3>Modelo MASTER</h3>
         <div class="image-container">
             <img src="Imgs/portada-seccion.jpg" alt="Imagen de portada">
         </div>
@@ -75,7 +82,7 @@
     </section>
        <!----------- PORTADA MODELO ULTRA --------------->
        <section class="modelo" id="ultra">
-        <h2>Modelo ULTRA</h2>
+        <h3>Modelo ULTRA</h3>
         <div class="image-container">
             <img src="Imgs/portada-seccion.jpg" alt="Imagen de portada">
         </div>
@@ -100,16 +107,47 @@
             </div>
         </div>
     </section>
+    <!----------- PORTADA MODELO DYNAMIC --------------->
+    <section class="modelo" id="Dynamic">
+        <h3>Modelo DYNAMIC</h3>
+        <div class="image-container">
+            <img src="Imgs/portada-seccion.jpg" alt="Imagen de portada">
+        </div>
+        <button class="show-modelo">Ver más colores</button>
+        <p>Elaboradas en material sintetico de alta calidad brindando mayor comodidad.</p>
+        </div>
+        <!----------- CARDS DYNAMIC --------------->
+        <div id="modelo-card" class="modelo-grid">
+            <div class="modelo-card">
+                <img src="Imgs/card.jpg" alt="Nombre del producto">
+                <h2>DYNAMIC 01</h2>
+                <p>Precio: $87.000</p>
+                <a href="https://wa.me/+573125141329?text=Hola!%20me%20gusta%20el%20modelo%20Ultra%2001" target="_blank">
+                <button >Me gusta!</button></a>
+            </div>
+            <div class="modelo-card">
+                <img src="Imgs/card.jpg" alt="Nombre del producto">
+                <h2>DYNAMIC 02</h2>
+                <p>Precio: $87.000</p>
+                <a href="https://wa.me/+573125141329?text=Hola!%20me%20gusta%20el%20modelo%20Ultra%2002" target="_blank">
+                <button >Me gusta!</button></a>
+            </div>
+        </div>
+    </section>
     <!-----------BOTON WHATSAPP --------------->
+    <div class="whatsapp-button2">
+       <span class="tooltip">¿En qué te podemos ayudar?</span>
+    </div>
     <a href="https://wa.me/+573125141329?text=Estoy%20interesad@%20en%20las%20zapatillas" target="_blank" class="whatsapp-button">
         <img src="Imgs/whatsapp.png" alt="WhatsApp">
     </a>
+     <!----------FOOTER --------------->
     <footer>
         <a href="https://www.facebook.com/p/Zapatillas-Hat-Trick-100064189026215/" target="_blank">
-            <i class="fab fa-facebook-f">  Zapatillas Hat Trick </i>
+            <i class="fab fa-facebook-f"> </i> Zapatillas Hat Trick
         </a>
         <a href="https://www.instagram.com/zapatillashattrick?igsh=YzljYTk1ODg3Zg==" target="_blank">
-            <i class="fab fa-instagram">  Zapatillas_HatTrick</i>
+            <i class="fab fa-instagram"> </i> Zapatillas_HatTrick
         </a>
     </footer>
 <script src="script.js"></script>

@@ -10,15 +10,26 @@ showModeloButtons.forEach(function(button) {
     });
 
     button.addEventListener('click', function() {
+        var firstShownCard = null;
+
         modeloCards.forEach(function(card) {
             if (card.style.display === 'none' || card.style.display === '') {
                 card.style.display = 'flex';
-                card.scrollIntoView({behavior: "smooth"}); // Desplaza el navegador hasta la card
                 button.textContent = 'Ver más modelos';
+
+                // Guarda la primera tarjeta que se muestra
+                if (!firstShownCard) {
+                    firstShownCard = card;
+                }
             } else {
                 card.style.display = 'none';
                 button.textContent = 'Ver más colores';
             }
         });
+
+        // Desplaza el navegador hasta la primera tarjeta que se muestra
+        if (firstShownCard) {
+            firstShownCard.scrollIntoView({behavior: "smooth"});
+        }
     });
 });

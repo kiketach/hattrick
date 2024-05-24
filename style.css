@@ -121,13 +121,17 @@ nav li a:hover {
    }
 
    .icon-container i {
-    font-size: smaller;
-    font-family: 'roboto', sans-serif;
+     font-family: 'roboto', sans-serif;
 }
 
 .icon-container .fas::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+}
+
+.header i {
+    font-size: 15px;
+    white-space: nowrap;
 }
 
 /* =============PORTADA MODELO===================== */
@@ -353,6 +357,15 @@ footer a {
     h1 {
         font-size: 40px; /* Reduce el tamaño de la fuente */
     }
+
+    .header i {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Ajusta este valor a lo que necesites */
+    }
+    
 }
 
 /* Cuando la pantalla tiene 400px o menos de ancho */

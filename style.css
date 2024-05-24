@@ -122,16 +122,16 @@ nav li a:hover {
 
    .icon-container i {
      font-family: 'roboto', sans-serif;
+     font-size: 15px; /* Ajusta este valor a lo que necesites para pantallas grandes */
+     word-wrap: break-word;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .icon-container .fas::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-}
-
-.header i {
-    font-size: 15px;
-    word-wrap: break-word;
 }
 
 /* =============PORTADA MODELO===================== */
@@ -363,8 +363,9 @@ footer a {
         font-size: 40px; /* Reduce el tamaño de la fuente */
     }
 
-    .header i {
+    .icon-container i {
         font-size: 12px;
+        white-space: normal;
     }
 
     .logo {

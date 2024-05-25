@@ -34,11 +34,11 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    flex-wrap: nowrap; /* Permitir que los elementos se envuelvan */
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 5px;
     white-space: nowrap; /* Asegurar que los elementos del menú no se envuelvan */
 }
 
@@ -49,7 +49,7 @@ nav ul li {
 nav > ul > li > a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
 }
 

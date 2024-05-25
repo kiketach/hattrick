@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -21,6 +25,7 @@ header {
     width: 100%;
     z-index: 100;
     background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
 }
 
 nav ul {
@@ -87,13 +92,14 @@ nav li a:hover {
     top: 45px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px; /* Reduce el tamaño del logo */
+    width: 80px; /* Reduce el tamaño del logo */
+    max-width: 100%;
 }
 
 .banner {
     background: url('Imgs/Banner.jpg') no-repeat center center;
     background-size: cover;
-    height: 300px;
+    height: 500px;
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -131,7 +137,7 @@ nav li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 15px; /* Ajusta este valor a lo que necesites para pantallas grandes */
+    font-size: 12px; 
     word-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -218,7 +224,7 @@ nav li a:hover {
     width: 95%;
     height: auto;
     object-fit: cover;
-    max-height: 500px;
+    height: auto;
     max-width: 100%;
 }
 

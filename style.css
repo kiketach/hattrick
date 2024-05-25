@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #c2c1c1;
-    max-width: 100vw; /* Evita que el cuerpo se desborde */
+    max-width: 100vw !important; 
     box-sizing: border-box;
 }
 
@@ -29,10 +29,12 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
 nav li {
     margin: 0 10px;
+    white-space: nowrap; /* Asegurar que los elementos del menú no se envuelvan */
 }
 
 nav ul li {
@@ -231,11 +233,11 @@ nav li a:hover {
 
 .modelo-card {
     display: flex;
-    flex-direction: column; 
-    flex: 1 0 10%;
-    margin: 1%; 
+    flex-direction: column;
+    flex: 1 0 100%; /* Asegurar que cada tarjeta ocupe el 100% del ancho del contenedor */
+    margin: 1%;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.6); /*fondo blanco con transparencia */
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .modelo-card p {
@@ -381,9 +383,15 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        left: 250px;     
+        left: 300px;     
     }
     .modelo-card {
-        flex: 1 0 50%; /* ocupa al menos el 50% del ancho del contenedor en pantallas pequeñas */
+        flex: 1 0 48%; /* Para pantallas más grandes, permitir que las tarjetas sean más pequeñas */
+    }
+}
+
+@media (min-width: 768px) {
+    .modelo-card {
+        flex: 1 0 31%; /* Para pantallas aún más grandes */
     }
 }

@@ -204,7 +204,8 @@ nav li a:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    max-width: 100%; 
 }
 
 .image-container .show-modelo {
@@ -218,6 +219,7 @@ nav li a:hover {
     height: auto;
     object-fit: cover;
     max-height: 500px;
+    max-width: 100%;
 }
 
 .modelo-grid {
@@ -288,7 +290,7 @@ nav li a:hover {
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px; /* Ajustar para pantallas más pequeñas */
     padding: 10px;
     border-radius: 50%;
     font-size: 24px;
@@ -383,7 +385,7 @@ footer a {
 
     .whatsapp-button {
         position: fixed;
-        left: 300px;     
+        right: 10px;     
     }
     .modelo-card {
         flex: 1 0 48%; /* Para pantallas más grandes, permitir que las tarjetas sean más pequeñas */

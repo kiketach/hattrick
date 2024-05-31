@@ -153,6 +153,25 @@ nav li a:hover {
 .icon-container i::before {
     margin-bottom: 10px;
 }
+/* =============CARRUSEL===================== */
+.carousel-image {
+    height: 500px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.carousel-inner {
+    background-color: #c2c1c1;
+}
+
+.carousel-inner {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+        url('Imgs/background-seccion.jpg') no-repeat center center fixed; ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* =============PORTADA MODELO===================== */
 .modelo {
@@ -403,3 +422,9 @@ footer a {
         flex: 1 0 31%; /* Para pantallas aún más grandes */
     }
 }
+
+@media (min-width: 1024px) {
+    .modelo img {
+      width: 65%;
+    }
+  }

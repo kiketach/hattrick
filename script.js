@@ -33,3 +33,16 @@ showModeloButtons.forEach(function(button) {
         }
     });
 });
+
+//Envio Formulario
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var whatsappMessage = 'Hola, mi nombre es ' + name + ', mi correo electrónico es ' + email + '. ' + message;
+
+    window.location.href = 'https://wa.me/+573125141329?text=' + encodeURIComponent(whatsappMessage);
+});

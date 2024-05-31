@@ -25,7 +25,6 @@ header {
     width: 100%;
     z-index: 100;
     background: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
 }
 
 nav ul {
@@ -67,7 +66,6 @@ nav ul li ul a {
     color: white;
     text-align: left;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
 nav ul li:hover ul {
@@ -79,11 +77,12 @@ nav li a {
     color: white;
     text-align: left;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
 nav li a:hover {
     background-color: #747171;
+    text-decoration: none;
+    color: white;
 }
 
 /* =============BANNER===================== */
@@ -92,8 +91,8 @@ nav li a:hover {
     top: 45px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px; /* Reduce el tamaño del logo */
-    max-width: 100%;
+    width: 90px; /* Reduce el tamaño del logo */
+    max-width: 150%;
 }
 
 .banner {
@@ -156,9 +155,13 @@ nav li a:hover {
 /* =============CARRUSEL===================== */
 .carousel-image {
     height: 500px;
-    width: auto;
+    width: auto; /* para mantener las proporciones de la imagen */
+    object-fit: contain; /* para que la imagen se ajuste al espacio del carrusel */
     display: block;
     margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .carousel-inner {
@@ -172,7 +175,6 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* =============PORTADA MODELO===================== */
 .modelo {
     background: 
@@ -361,7 +363,40 @@ nav li a:hover {
     top: -135px;
     right: 120%;
 }
+/* =============FORMULARIO===================== */
+.stylish-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 
+.stylish-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.stylish-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #007bff;
+}
+
+.form-container {
+    border: 2px solid #7e7878; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    margin: 30px 0;
+}
 /* =============FOOTER===================== */
 footer {
     background-color: #000;
@@ -421,10 +456,33 @@ footer a {
     .modelo-card {
         flex: 1 0 31%; /* Para pantallas aún más grandes */
     }
+    .logo {
+        margin-bottom: 20px; /* Añade un margen en la parte inferior del logo */
+    }
+  
 }
 
 @media (min-width: 1024px) {
     .modelo img {
       width: 65%;
     }
-  }
+    .banner {
+        position: relative;
+    }
+
+    .logo-title-container {
+        position: absolute;
+        top: 100px; /* Ajusta este valor según tus necesidades */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column-reverse; /* Esto hará que el logo esté encima del título */
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Añade un margen en la parte inferior del logo */
+        width: 80px; /* Reduce el tamaño del logo */
+        max-width: 100%;
+    }
+}

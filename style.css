@@ -38,7 +38,7 @@ nav ul {
 
 nav li {
     margin: 0 5px;
-    white-space: nowrap; /* Asegurar que los elementos del menú no se envuelvan */
+    white-space: nowrap;
 }
 
 nav ul li {
@@ -68,8 +68,18 @@ nav ul li ul a {
     padding: 14px 16px;
 }
 
-nav ul li:hover ul {
+nav ul li:hover > ul {
     display: block;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    min-width: 120px;
+}
+
+nav ul ul li:hover > ul {
+    display: block; /* Muestra el submenú de tercer nivel cuando se pasa el mouse sobre el elemento del menú de segundo nivel */
 }
 
 nav li a {
@@ -199,6 +209,7 @@ nav li a:hover {
     font-size: 20px;
     color: rgb(7, 7, 7);
 }
+
 /* Estilos para el botón */
 .show-modelo {
     background-color: black;
@@ -223,11 +234,12 @@ nav li a:hover {
 .image-container {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 50%; /* Ajusta este valor según tus necesidades */
     height: auto;
+    margin: 0 auto; /* Centra el contenedor */
 }
 
-.image-container img {
+.image-container video {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -239,14 +251,6 @@ nav li a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-.modelo img {
-    width: 95%;
-    height: auto;
-    object-fit: cover;
-    height: auto;
-    max-width: 100%;
 }
 
 .modelo-grid {
@@ -421,7 +425,7 @@ footer a {
         font-size: 14px; /* Reduce el tamaño de la fuente */
         margin-right: 10px; /* Reduce el margen derecho */
     }
-    
+
     h1 {
         font-size: 30px;
     }

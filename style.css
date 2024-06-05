@@ -166,12 +166,17 @@ nav li a:hover {
 .carousel-image {
     height: 500px;
     width: auto; /* para mantener las proporciones de la imagen */
-    object-fit: contain; /* para que la imagen se ajuste al espacio del carrusel */
+    object-fit: contain;
     display: block;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.first-image {
+    object-fit: cover;
+    width: 40%; /* Ajusta esto al ancho que prefieras */
 }
 
 .carousel-inner {
@@ -184,6 +189,13 @@ nav li a:hover {
         url('Imgs/background-seccion.jpg') no-repeat center center fixed; ;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.carousel-caption {
+    color: #000 !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: bold;
 }
 /* =============PORTADA MODELO===================== */
 .modelo {

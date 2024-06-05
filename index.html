@@ -219,6 +219,7 @@
     <div class="container d-flex flex-column justify-content-center align-items-center" id="form">
         <div class="form-container">
             <h2 class="text-center">Pedidos al por mayor</h2>
+            <h5>Si eres Club o Tienda, Contactanos!</h5>
             <form id="myForm" class="text-center">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Nombre:</label>
@@ -236,20 +237,6 @@
             </form>
         </div>
     </div>
-    
-    <script>
-    document.getElementById('myForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-    
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-    
-        var whatsappMessage = 'Hola, mi nombre es ' + name + ', mi correo electrónico es ' + email + '. ' + message;
-    
-        window.location.href = 'https://wa.me/+573125141329?text=' + encodeURIComponent(whatsappMessage);
-    });
-    </script>
     <!-----------BOTON WHATSAPP --------------->
     <a href="https://wa.me/+573125141329?text=Estoy%20interesad@%20en%20las%20zapatillas" target="_blank" class="whatsapp-button">
         <img src="Imgs/whatsapp.png" alt="WhatsApp">

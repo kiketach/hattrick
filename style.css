@@ -33,7 +33,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap; /* Permitir que los elementos se envuelvan */
+    flex-wrap: nowrap;
 }
 
 nav li {
@@ -176,7 +176,7 @@ nav li a:hover {
 
 .first-image {
     object-fit: cover;
-    width: 40%; /* Ajusta esto al ancho que prefieras */
+    width: 40%; /* Ajusta esto al ancho */
 }
 
 .carousel-inner {
@@ -279,7 +279,7 @@ nav li a:hover {
 .modelo-card {
     display: none;
     flex-direction: column;
-    flex: 1 0 100%; /* Asegurar que cada tarjeta ocupe el 100% del ancho del contenedor */
+    flex: 1 0 100%; /* las tarjetas ocupan el 100% del ancho del contenedor */
     margin: 1%;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.6);
@@ -438,7 +438,12 @@ footer a {
     .banner .logo-title-container h1 {
         margin-top: 20px; /* Ajusta este valor según tus necesidades */
     }
-    
+
+    .first-image {
+        object-fit: contain;
+        width: 100%;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -460,9 +465,8 @@ footer a {
         flex: 1 0 48%; /* Para pantallas más grandes, permitir que las tarjetas sean más pequeñas */
     }
 
-    .first-image {
-        object-fit: contain;
-        width: 100%;
+    .form-container h5 {
+        text-align: center;
     }
 }
 

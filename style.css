@@ -234,7 +234,7 @@ nav li a:hover {
 .image-container {
     position: relative;
     overflow: hidden;
-    width: 50%; /* Ajusta este valor según tus necesidades */
+    width: 50%;
     height: auto;
     margin: 0 auto; /* Centra el contenedor */
 }
@@ -265,7 +265,7 @@ nav li a:hover {
 /* =============CARDS===================== */
 
 .modelo-card {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex: 1 0 100%; /* Asegurar que cada tarjeta ocupe el 100% del ancho del contenedor */
     margin: 1%;
@@ -406,20 +406,17 @@ footer p {
 
 footer a {
     color: #fff; 
-    margin-right: 10px; /* Agrega un poco de espacio a la derecha de cada enlace */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 /* =============MEDIAS QUERIES===================== */
-
-/* Cuando la pantalla tiene 400px o menos de ancho */
 @media (max-width: 400px) {
     h1 {
         font-size: 30px; /* Reduce aún más el tamaño de la fuente */
     }
 }
 
-/* Cuando la pantalla tiene 600px o menos de ancho */
 @media (max-width: 600px) {
     .nav-item {
         font-size: 14px; /* Reduce el tamaño de la fuente */
@@ -456,6 +453,12 @@ footer a {
         margin-bottom: 20px; /* Añade un margen en la parte inferior del logo */
     }
   
+}
+
+@media (max-width: 767px) {
+    .image-container {
+        width: 100%; /* Ajusta este valor según tus necesidades para dispositivos móviles */
+    }
 }
 
 @media (min-width: 1024px) {

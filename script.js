@@ -1,38 +1,30 @@
-var showModeloButtons = document.querySelectorAll('.show-modelo');
+window.onload = function() {
+    var showModeloButtons = document.querySelectorAll('.show-modelo');
+    var modeloCardContainers = document.querySelectorAll('.modelo-grid'); // Cambiado a .modelo-grid
 
-showModeloButtons.forEach(function(button) {
-    var modelo = button.closest('.modelo');
-    var modeloCards = modelo.querySelectorAll('.modelo-card');
-
-    // Oculta las tarjetas al cargar la página
-    modeloCards.forEach(function(card) {
-        card.style.display = 'none';
+    // Inicialmente ocultar todas las tarjetas de modelo
+    modeloCardContainers.forEach(container => {
+        var cards = container.querySelectorAll('.modelo-card');
+        cards.forEach(card => card.style.display = 'none');
     });
 
-    button.addEventListener('click', function() {
-        var firstShownCard = null;
+    showModeloButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            var cards = modeloCardContainers[index].querySelectorAll('.modelo-card');
+            var areCardsVisible = Array.from(cards).some(card => card.style.display !== 'none');
 
-        modeloCards.forEach(function(card) {
-            if (card.style.display === 'none' || card.style.display === '') {
-                card.style.display = 'flex';
-                button.textContent = 'Ver más modelos';
-
-                // Guarda la primera tarjeta que se muestra
-                if (!firstShownCard) {
-                    firstShownCard = card;
-                }
-            } else {
-                card.style.display = 'none';
+            if (areCardsVisible) {
+                // Si las tarjetas están visibles, las ocultamos y cambiamos el texto del botón
+                cards.forEach(card => card.style.display = 'none');
                 button.textContent = 'Ver más colores';
+            } else {
+                // Si las tarjetas están ocultas, las mostramos y cambiamos el texto del botón
+                cards.forEach(card => card.style.display = 'block');
+                button.textContent = 'Ver menos colores';
             }
         });
-
-        // Desplaza el navegador hasta la primera tarjeta que se muestra
-        if (firstShownCard) {
-            firstShownCard.scrollIntoView({behavior: "smooth"});
-        }
     });
-});
+}
 
 //Envio Formulario
 document.getElementById('myForm').addEventListener('submit', function(e) {

@@ -435,6 +435,10 @@ footer a {
         margin-right: 10px; /* Reduce el margen derecho */
     }
 
+    .banner .logo-title-container h1 {
+        margin-top: 20px; /* Ajusta este valor según tus necesidades */
+    }
+    
     h1 {
         font-size: 30px;
     }
@@ -454,6 +458,11 @@ footer a {
     }
     .modelo-card {
         flex: 1 0 48%; /* Para pantallas más grandes, permitir que las tarjetas sean más pequeñas */
+    }
+
+    .first-image {
+        object-fit: contain;
+        width: 100%;
     }
 }
 

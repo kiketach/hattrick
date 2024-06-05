@@ -84,13 +84,13 @@ nav ul ul li:hover > ul {
 
 nav li a {
     display: block;
-    color: white;
+    color: rgb(176, 184, 169);
     text-align: left;
     padding: 14px 16px;
 }
 
 nav li a:hover {
-    background-color: #747171;
+    background-color: #4b4df1;
     text-decoration: none;
     color: white;
 }

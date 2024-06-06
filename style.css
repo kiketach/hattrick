@@ -434,12 +434,14 @@ footer a {
 }
 
 /* =============MEDIAS QUERIES===================== */
+
+/* =============PANTALLAS-MAXIMO 400px===================== */
 @media (max-width: 400px) {
     h1 {
         font-size: 30px; /* Reduce aún más el tamaño de la fuente */
     }
 }
-
+/* =============PANTALLAS-MAXIMO 600px===================== */
 @media (max-width: 600px) {
     .nav-item {
         font-size: 14px; /* Reduce la fuente */
@@ -473,7 +475,7 @@ footer a {
         right: 10px;     
     }
     .modelo-card {
-        flex: 1 0 48%; /* Para pantallas más grandes, permitir que las tarjetas sean más pequeñas */
+        flex: 1 0 100%;
     }
 
     .form-container h5 {
@@ -492,8 +494,7 @@ footer a {
     }
 }
 
-
-
+/* =============PANTALLAS-MAXIMO 768px===================== */
 @media (min-width: 768px) {
     .modelo-card {
         flex: 1 0 31%; /* Para pantallas aún más grandes */
@@ -507,14 +508,12 @@ footer a {
         align-items: stretch;
     }
   
-}
-
-@media (max-width: 767px) {
     .image-container {
         width: 100%; /* Ajusta este valor según tus necesidades para dispositivos móviles */
     }
 }
 
+/* =============PANTALLAS-MAXIMO 1024px===================== */
 @media (min-width: 1024px) {
     .modelo img {
       width: 65%;

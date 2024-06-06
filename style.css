@@ -475,7 +475,10 @@ footer a {
         right: 10px;     
     }
     .modelo-card {
-        flex: 1 0 100%;
+        flex: 1 0 100%; /* Ahora las tarjetas ocuparán todo el ancho del contenedor en dispositivos móviles */
+        box-sizing: border-box; /* Asegura que el ancho incluye el relleno y el borde */
+        margin: 0; /* Elimina el margen */
+        padding: 0; /* Elimina el relleno */
     }
 
     .form-container h5 {

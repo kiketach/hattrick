@@ -452,11 +452,6 @@ footer a {
         margin-top: 20px;
     }
 
-    .first-image {
-        object-fit: contain;
-        width: 100%;
-    }
-
     h1 {
         font-size: 30px;
     }
@@ -474,6 +469,11 @@ footer a {
         position: fixed;
         right: 10px;     
     }
+    /* QUITAR */
+    .parent-element {
+        width: 100%; /* Asegura que el elemento padre también ocupa todo el ancho */
+    }
+     /* QUITAR */
     .modelo-card {
         flex: 1 0 100%; /* Ahora las tarjetas ocuparán todo el ancho del contenedor en dispositivos móviles */
         box-sizing: border-box; /* Asegura que el ancho incluye el relleno y el borde */

@@ -331,6 +331,10 @@ nav li a:hover {
     bottom: 20px;
     z-index: 1000;
 }
+/* =============MODAL===================== */
+.close {
+    float: left;
+}
 
 /* =============FORMULARIO===================== */
 .stylish-input {
@@ -462,7 +466,7 @@ footer a {
     }
 
     .modelo-card {
-        flex: 1 0 31%; /* Para pantallas aún más grandes */
+        flex: 1 0 40%; /* Para pantallas aún más grandes */
     }
     .logo {
         margin-bottom: 20px; /* Añade un margen en la parte inferior del logo */

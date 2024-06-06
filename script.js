@@ -26,6 +26,16 @@ window.onload = function() {
     });
 }
 
+function openModal(image) {
+    document.getElementById('modalImage').src = image;
+}
+
+function openModal(image) {
+    document.getElementById('modalImage').src = image;
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+}
+
 //Envio Formulario
 document.getElementById('myForm').addEventListener('submit', function(e) {
     e.preventDefault();

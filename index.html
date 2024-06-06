@@ -131,7 +131,9 @@
     <!----------- CARDS MASTER --------------->
         <div id="modelo-card-master" class="modelo-grid">
             <div class="modelo-card">
-                <img src="Imgs/card.jpg" alt="Nombre del producto">
+                <a href="#myModal" onclick="openModal('Imgs/card.jpg')">
+                    <img src="Imgs/card.jpg" alt="Nombre del producto">
+                </a>
                 <h2>Master 01</h2>
                 <p>Precio: $97.000</p>
                 <a href="https://wa.me/+573125141329?text=Hola!%20me%20gusta%20el%20modelo%20Master%2001" target="_blank">
@@ -360,6 +362,20 @@
     <div class="icon-container">
     <!-- <i class="fas fa-shoe-prints"> Quieres tu nombre </i> -->
      </div>
+</div>
+<!-- Modal -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: left;">
+                <span aria-hidden="true">&times;</span> Cerrar
+            </button>
+            <div class="modal-body">
+                <img id="modalImage" class="img-fluid" alt="Nombre del producto">
+            </div>
+        </div>
+    </div>
 </div>
     <!-----------FORMULARIO --------------->
     <div class="container d-flex flex-column justify-content-center align-items-center" id="form">

@@ -185,8 +185,8 @@ nav li a:hover {
 
 .carousel-inner {
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-        url('Imgs/background-seccion.jpg') no-repeat center center fixed; ;
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url('Imgs/background.jpg') no-repeat center center fixed; ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -200,8 +200,8 @@ nav li a:hover {
 /* =============PORTADA MODELO===================== */
 .modelo {
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-        url('Imgs/background-seccion.jpg') no-repeat center center fixed; 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url('Imgs/background.jpg') no-repeat center center fixed; 
     background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -469,6 +469,8 @@ footer a {
         text-align: center;
     }
 }
+
+
 
 @media (min-width: 768px) {
     .modelo-card {

@@ -483,6 +483,11 @@ footer a {
         width: 100%;
     }
 
+    .show-modelo:hover {
+        background-color: #fffefd;
+        color: #000000;
+    }
+
 }
 
 /* =============PANTALLAS-MAXIMO 768px===================== */

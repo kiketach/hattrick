@@ -470,6 +470,19 @@ footer a {
         right: 10px;     
     }
 
+    .modelo-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modelo {
+        max-width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
 }
 
 /* =============PANTALLAS-MAXIMO 768px===================== */

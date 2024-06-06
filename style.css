@@ -211,6 +211,7 @@ nav li a:hover {
 .modelo-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .modelo {

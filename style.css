@@ -479,6 +479,10 @@ footer a {
     .form-container h5 {
         text-align: center;
     }
+
+    .image-container {
+        width: 100%;
+    }
 }
 
 

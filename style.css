@@ -480,6 +480,12 @@ footer a {
         text-align: center;
     }
 
+    .modelo-container {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+    }
+
     .image-container {
         width: 100%;
     }

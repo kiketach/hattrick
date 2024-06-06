@@ -184,9 +184,7 @@ nav li a:hover {
 }
 
 .carousel-inner {
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-        url('Imgs/background.jpg') no-repeat center center fixed; ;
+    background-color: #ccc;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -199,10 +197,7 @@ nav li a:hover {
 }
 /* =============PORTADA MODELO===================== */
 .modelo {
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-        url('Imgs/background.jpg') no-repeat center center fixed; 
-    background-color: white;
+    background-color: #ccc;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

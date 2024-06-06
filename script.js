@@ -1,6 +1,6 @@
 window.onload = function() {
     var showModeloButtons = document.querySelectorAll('.show-modelo');
-    var modeloCardContainers = document.querySelectorAll('.modelo-grid'); // Cambiado a .modelo-grid
+    var modeloCardContainers = document.querySelectorAll('.modelo-grid');
 
     // Inicialmente ocultar todas las tarjetas de modelo
     modeloCardContainers.forEach(container => {

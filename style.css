@@ -442,12 +442,12 @@ footer a {
 
 @media (max-width: 600px) {
     .nav-item {
-        font-size: 14px; /* Reduce el tamaño de la fuente */
+        font-size: 14px; /* Reduce la fuente */
         margin-right: 10px; /* Reduce el margen derecho */
     }
 
     .banner .logo-title-container h1 {
-        margin-top: 20px; /* Ajusta este valor según tus necesidades */
+        margin-top: 20px;
     }
 
     .first-image {
@@ -481,8 +481,9 @@ footer a {
     }
 
     .modelo-container {
+        width: 100%;
         flex-direction: column;
-        align-items: center; /* Centra los elementos horizontalmente */
+        align-items: center;
         justify-content: center; /* Centra los elementos verticalmente */
     }
 

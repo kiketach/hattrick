@@ -163,7 +163,7 @@ nav li a:hover {
     margin-bottom: 10px;
 }
 /* =============CARRUSEL===================== */
-.carousel-control-prev-icon,
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
 }
@@ -189,7 +189,7 @@ nav li a:hover {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     font-size: 20px;
     font-weight: bold;
-}
+} */
 /* =============PORTADA MODELO===================== */
 .modelo-container {
     display: flex;

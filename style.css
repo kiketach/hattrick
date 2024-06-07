@@ -25,6 +25,7 @@ header {
     width: 100%;
     z-index: 100;
     background: rgba(0, 0, 0, 0.8);
+    font-family: "Merienda", cursive;
 }
 
 nav ul {
@@ -197,7 +198,8 @@ nav li a:hover {
     text-align: center;
     color: rgb(5, 5, 5);
     font-size: 27px;
-    max-width: 50%; /* Ajusta este valor según tus necesidades */
+    max-width: 50%;
+    font-family: "Merienda", cursive;
 }
 
 .modelo h3 {
@@ -205,6 +207,7 @@ nav li a:hover {
 }
 
 .modelo p{
+    padding-top: 15px;
     font-size: 20px;
     color: rgb(7, 7, 7);
 }

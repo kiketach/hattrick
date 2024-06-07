@@ -184,6 +184,8 @@ nav li a:hover {
 .icon-container i::before {
     margin-bottom: 10px;
 }
+
+
 /* =============PORTADA MODELO===================== */
 .modelo-container {
     display: flex;
@@ -209,8 +211,8 @@ nav li a:hover {
 
 /* Estilos para el botón */
 .show-modelo {
-    background-color: black;
-    color: white;
+    background-color: #4a55f5;
+    color: rgb(252, 252, 252);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -224,7 +226,7 @@ nav li a:hover {
 }
 
 .show-modelo:hover {
-    background-color: #fffefd;
+    background-color: #4a55f536;
     color: #000000;
 }
 
@@ -244,7 +246,7 @@ nav li a:hover {
 }
 
 #video-master {
-    margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 20px;
 }
 
 .image-container .show-modelo {
@@ -478,20 +480,44 @@ footer a {
 
 /* =============PANTALLAS-MINIMO 768px===================== */
 @media (min-width: 768px) {
+    .icon-container {
+        gap: 35px; 
+    }
+
+    .icon-container i {
+        font-size: 17px;
+    }
+
+    .icon-container .fas::before {
+        font-size: 20px;
+    }
+
+    .header .icon-container {
+        gap: 35px; /* Aumenta este valor para pantallas más grandes */
+    }
+
+    .header .icon-container .icon-text {
+        font-size: 18px; /* Aumenta este valor para pantallas más grandes */
+    }
+
+    .header .icon-container .icon-text .suela-imagen {
+        width: 70px; /* Aumenta este valor para pantallas más grandes */
+    }
+
     .carousel-item {
-        height: 100vh; /* Ajusta la altura al 50% de la altura de la ventana */
+        height: 100vh;
     }
     .carousel-image {
-        width: 100%; /* Ajusta el ancho al 100% */
-        height: auto; /* Ajusta la altura automáticamente */
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
 
     .modelo-card {
-        flex: 1 0 40%; /* Para pantallas aún más grandes */
+        flex: 1 0 40%;
     }
     .logo {
-        margin-bottom: 20px; /* Añade un margen en la parte inferior del logo */
+        margin-bottom: 20px;
     }
 
     .modelo-container {
@@ -500,7 +526,7 @@ footer a {
     }
   
     .image-container {
-        width: 100%; /* Ajusta este valor según tus necesidades para dispositivos móviles */
+        width: 100%;
     }
     .video-padding {
         padding-bottom: 65px; /* Ajusta el padding inferior a 20px */

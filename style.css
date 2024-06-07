@@ -138,7 +138,8 @@ nav li a:hover {
 .icon-container {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 2%;
+    flex-wrap: wrap;
    }
 
    .icon-container i {

@@ -159,6 +159,26 @@ nav li a:hover {
     font-size: 20px;
 }
 
+.suela-imagen {
+    width: 3em;
+    height: 3em;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suela-imagen:hover {
+    cursor: pointer;
+}
+
+#modalImage {
+    display: block;
+    margin: auto;
+}
+
 .icon-container i::before {
     margin-bottom: 10px;
 }

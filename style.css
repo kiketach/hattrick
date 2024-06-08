@@ -416,8 +416,13 @@ footer a {
 }
 
 footer a i {
-    font-size: 24px;
+    font-size: 30px;
     margin-right: 30px;
+}
+
+footer a:hover {
+    color: #fff; 
+    text-decoration: none;
 }
 
 /* =============MEDIAS QUERIES===================== */

@@ -587,11 +587,11 @@ footer a:hover {
 /* Efecto de escala para pantallas más pequeñas */
 @media (max-width: 768px) {
     .suela-imagen {
-        width: 2.5em; /* Ajusta el tamaño para dispositivos móviles */
-        height: 2em;
+        width: 3.5em; /* Ajusta el tamaño para dispositivos móviles */
+        height: 3em;
     }
 
     .suela-imagen:hover {
-        transform: scale(1.05); /* Escala más pequeña en móviles */
+        transform: scale(1.4); /* Escala más pequeña en móviles */
     }
 }

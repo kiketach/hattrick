@@ -581,17 +581,3 @@ footer a:hover {
         max-width: 100%;
     }
 }
-
-/* =============PANTALLAS-MAXIMO 768px===================== */
-
-/* Efecto de escala para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .suela-imagen {
-        width: 3.5em; /* Ajusta el tamaño para dispositivos móviles */
-        height: 3em;
-    }
-
-    .suela-imagen:hover {
-        transform: scale(1.4); /* Escala más pequeña en móviles */
-    }
-}

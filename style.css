@@ -284,7 +284,7 @@ nav li a:focus {
 .modelo-card {
     display: none;
     flex-direction: column;
-    flex: 1 0 100%; /* las tarjetas ocupan el 100% del ancho del contenedor */
+    flex: 1 0 100%;
     margin: 1%;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.6);
@@ -516,15 +516,15 @@ footer a:hover {
     }
 
     .header .icon-container {
-        gap: 35px; /* Aumenta este valor para pantallas más grandes */
+        gap: 35px;
     }
 
     .header .icon-container .icon-text {
-        font-size: 18px; /* Aumenta este valor para pantallas más grandes */
+        font-size: 18px;
     }
 
     .header .icon-container .icon-text .suela-imagen {
-        width: 70px; /* Aumenta este valor para pantallas más grandes */
+        width: 70px; 
     }
 
     .carousel-item {
@@ -537,7 +537,7 @@ footer a:hover {
     }
 
     .modelo-card {
-        flex: 1 0 40%;
+        flex: 1 0 48%;
     }
     .logo {
         margin-bottom: 20px;
@@ -556,7 +556,7 @@ footer a:hover {
     }
 }
 
-/* =============PANTALLAS-MAXIMO 1024px===================== */
+/* =============PANTALLAS-MINIMO 1024px===================== */
 @media (min-width: 1024px) {
     .modelo img {
       width: 65%;

@@ -84,12 +84,10 @@ nav li a {
 
 nav li a:hover,
 nav li a:focus {
-    background-color: #4b4df1;
+    background-color: rgb(93, 97, 91);
     text-decoration: none;
     color: white;
-    outline: 2px solid #4b4df1;
-    outline-offset: 4px;
-}
+    }
 
 /* =============BANNER===================== */
 .banner .logo {
@@ -436,6 +434,36 @@ footer a:hover {
     color: #fff; 
     text-decoration: none;
 }
+
+/* Estilos para el botón de subir al inicio */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#scrollToTopButton:hover {
+    background-color: rgba(93, 97, 91, 0.6); /* Mayor transparencia al hacer hover */
+    color: #000000;
+}
+
+/* Mostrar el botón cuando el usuario se desplaza hacia abajo */
+#scrollToTopButton.show {
+    opacity: 1;
+}
+
 
 /* =============MEDIAS QUERIES===================== */
 

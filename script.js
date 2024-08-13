@@ -48,3 +48,25 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
 
     window.location.href = 'https://wa.me/+573125141329?text=' + encodeURIComponent(whatsappMessage);
 });
+
+
+// boton de inicio
+const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+// Mostrar/ocultar el botón según el scroll del usuario
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Mostrar el botón cuando el scroll es mayor a 300px
+        scrollToTopButton.classList.add('show');
+    } else {
+        scrollToTopButton.classList.remove('show');
+    }
+});
+
+// Scroll suave al hacer clic en el botón
+scrollToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

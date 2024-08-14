@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Permanent+Marker&family=Shadows+Into+Light&family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="Imgs/Logo.png" type="image/x-icon">
     <title>Zapatillas Hat Trick</title>
 </head>
@@ -39,7 +40,7 @@
                 </ul>
             </li>
             <!-- <li><a href="#quienes-somos">Nosotros</a></li> -->
-            <li><a href="#form">Mayoristas</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#formModal">Mayoristas</a></li>
         </ul>
     </nav>
 </header>
@@ -648,27 +649,35 @@
     </div>
 </div>
     <!-----------FORMULARIO --------------->
-    <div class="container d-flex flex-column justify-content-center align-items-center" id="form">
-        <div class="form-container">
-            <h2 class="text-center"> Pedidos al mayor</h2>
-            <h5>Si eres Club o Tienda, Contactanos!</h5>
-            <form id="myForm" class="text-center">
-                <div class="form-group">
-                    <label for="name"><i class="fas fa-user"></i> Nombre:</label>
-                    <input type="text" class="form-control stylish-input" id="name" placeholder="Ingrese su nombre" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:</label>
-                    <input type="email" class="form-control stylish-input" id="email" placeholder="Ingrese su correo electrónico" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message"><i class="fas fa-comment"></i> Mensaje:</label>
-                    <textarea class="form-control stylish-input" id="message" placeholder="Ingrese su mensaje" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark stylish-button mb-4">Enviar</button>
-            </form>
+ <!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">Pedidos al Mayor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <h5>Si eres Club o Tienda, ¡Contáctanos!</h5>
+          <form id="myForm" class="text-center">
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+              <input type="text" class="form-control stylish-input" id="name" placeholder="Ingrese su nombre" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:</label>
+              <input type="email" class="form-control stylish-input" id="email" placeholder="Ingrese su correo electrónico" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fas fa-comment"></i> Mensaje:</label>
+              <textarea class="form-control stylish-input" id="message" placeholder="Ingrese su mensaje" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark stylish-button mb-4">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>  
     <!-----------BOTON WHATSAPP --------------->
     <a href="https://wa.me/+573125141329?text=Estoy%20interesad@%20en%20las%20zapatillas" target="_blank" class="whatsapp-button">
         <img src="Imgs/whatsapp.png" alt="WhatsApp">
@@ -691,5 +700,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

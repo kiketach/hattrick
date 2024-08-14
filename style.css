@@ -502,6 +502,15 @@ footer a:hover {
         height: auto;
     }
 
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
     .whatsapp-button {
         position: fixed;
         right: 10px;     

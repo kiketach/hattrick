@@ -477,7 +477,7 @@ footer a:hover {
 @media (max-width: 600px) {
     .nav-item {
         font-size: 14px;
-        margin-right: 10px; /* Reduce el margen derecho */
+        margin-right: 10px; 
     }
 
     .banner .logo-title-container h1 {
@@ -503,7 +503,7 @@ footer a:hover {
     }
 
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .carousel-caption p {

@@ -21,6 +21,9 @@ window.onload = function() {
                 // Si las tarjetas están ocultas, las mostramos y cambiamos el texto del botón
                 cards.forEach(card => card.style.display = 'block');
                 button.textContent = 'Ver menos colores';
+
+                // Desplazar la vista a la primera tarjeta visible
+                cards[0].scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
@@ -28,13 +31,10 @@ window.onload = function() {
 
 function openModal(image) {
     document.getElementById('modalImage').src = image;
-}
-
-function openModal(image) {
-    document.getElementById('modalImage').src = image;
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     myModal.show();
 }
+
 
 //Envio Formulario
 document.getElementById('myForm').addEventListener('submit', function(e) {

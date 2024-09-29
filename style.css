@@ -100,7 +100,7 @@ nav li a:focus {
 }
 
 .banner {
-    background: url('Imgs/Bannernuevo.png') no-repeat center center;
+    background: url('Imgs/Banner.png') no-repeat center center;
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     height: 500px;
     color: white;

@@ -175,10 +175,14 @@ nav li a:focus {
     margin-bottom: 10px;
 }
 
+.carousel-inner {
+    background-color: black;
+}
 
 .carousel-inner img {
-    width: 100%; /* Asegura que las imágenes llenen el ancho del carrusel */
+    width: 100%;
     height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover;
 }
 
 .carousel-caption {

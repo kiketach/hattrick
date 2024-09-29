@@ -101,7 +101,7 @@ nav li a:focus {
 
 .banner {
     background: url('Imgs/Bannernuevo.png') no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     height: 500px;
     color: white;
     text-align: center;
@@ -476,6 +476,13 @@ footer a:hover {
 @media (max-width: 400px) {
     h1 {
         font-size: 30px; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .banner {
+        background-position: top center; /* Ajusta la posición de la imagen en pantallas pequeñas */
+        background-size: contain; /* Mantiene el aspecto de la imagen */
+        height: auto; /* Permite que la altura del banner se ajuste al contenido */
+        padding: 50px 0; /* Reduce el padding en móviles */
     }
 }
 /* =============PANTALLAS-MAXIMO 600px===================== */
